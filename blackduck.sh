@@ -169,7 +169,7 @@ while (("$#")); do
     shift 2
     ;;
   --versionName)
-    version=$(parseOption $1 $2)
+    versionName=$(parseOption $1 $2)
     shift 2
     ;;
   --sourcePath)
