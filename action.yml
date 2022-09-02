@@ -83,7 +83,7 @@ runs:
         --hubToken '${{ inputs.hubToken }}' \
         --projectType '${{ inputs.projectType }}' \
         --projectName '${{ inputs.projectName }}' \
-        --locationName '${{ inputs.projectName }}' \
+        --locationName '${{ inputs.locationName }}' \
         --versionName '${{ inputs.versionName }}' \
         --sourcePath '${{ inputs.sourcePath }}' \
         --detectCodeLocationClassifier '${{ inputs.detectCodeLocationClassifier }}' \
