@@ -56,5 +56,5 @@ jobs:
             hubToken: ${{ secrets.BLACKDUCK_TOKEN }}
             projectType: maven
             projectName: example
-            version: ${{ steps.get_version.outputs.VERSION }}
+            versionName: ${{ steps.get_version.outputs.VERSION }}
 ```
