@@ -21,7 +21,7 @@ inputs:
     description: 'location name to be used in Blackduck'
     required: false
     default: ''
-  version:
+  versionName:
     description: 'Version label of the current build'
     required: false
     default: 'latest'
@@ -83,7 +83,8 @@ runs:
         --hubToken '${{ inputs.hubToken }}' \
         --projectType '${{ inputs.projectType }}' \
         --projectName '${{ inputs.projectName }}' \
-        --version '${{ inputs.version }}' \
+        --locationName '${{ inputs.projectName }}' \
+        --versionName '${{ inputs.versionName }}' \
         --sourcePath '${{ inputs.sourcePath }}' \
         --detectCodeLocationClassifier '${{ inputs.detectCodeLocationClassifier }}' \
         --detectExcludedDirectories '${{ inputs.detectExcludedDirectories }}' \

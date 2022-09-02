@@ -30,11 +30,11 @@ function validateOptions() {
     detectCodeLocationClassifier="-${detectCodeLocationClassifier}"
   fi
   if [ -z "${locationName}" ]; then
-    locationName=${projectName}-${version}${detectCodeLocationClassifier}
+    locationName=${projectName}-${versionName}${detectCodeLocationClassifier}
   fi
 
   if [ -z "${detectProjectVersionPhase}" ]; then
-    if [ *latest == "${version}" ]; then
+    if [ *latest == "${  versionName}" ]; then
       detectProjectVersionPhase='DEVELOPMENT'
     else
       detectProjectVersionPhase='PRERELEASE'
@@ -49,7 +49,7 @@ function performScaScan() {
   options="${options} --blackduck.api.token=${hubToken}"
   options="${options} --logging.level.com.synopsys.integration=${logLevel}"
   options="${options} --detect.project.name=${projectName}"
-  options="${options} --detect.project.version.name=${version}"
+  options="${options} --detect.project.version.name=${versionName}"
   options="${options} --detect.code.location.name=${locationName}"
   options="${options} --detect.project.version.phase=${detectProjectVersionPhase}"
   options="${options} --detect.project.version.update=true"
