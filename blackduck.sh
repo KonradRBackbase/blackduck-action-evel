@@ -165,7 +165,7 @@ while (("$#")); do
     shift 2
     ;;
   --locationName)
-    projectName=$(parseOption $1 $2)
+    locationName=$(parseOption $1 $2)
     shift 2
     ;;
   --versionName)
