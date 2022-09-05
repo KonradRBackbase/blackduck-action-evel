@@ -4,11 +4,11 @@ Integration with Synopsys Detect into GitHub action workflows.
 
 Configure the action to run Detect.
 
-[https://github.com/fnxpt/blackduck-action](Original)
+[Original](https://github.com/fnxpt/blackduck-action)
 
-[https://github.com/baas-devops-evel/blackduck-action-evel](Evel Template)
+[Evel Template](https://github.com/baas-devops-evel/blackduck-action-evel)
 
-[https://github.com/KonradRBackbase/blackduck-action-evel](Evel Public)
+[Evel Public](https://github.com/KonradRBackbase/blackduck-action-evel)
 
 The action has to be shared in public git repository.
 
